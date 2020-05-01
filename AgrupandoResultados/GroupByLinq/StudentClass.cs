@@ -76,5 +76,24 @@ namespace GroupByLinq
                 Console.WriteLine($"{item.Name,-15}{item.Score}");
             }
         }
+
+        public void GroupBySingleProperty()
+        {
+            Console.WriteLine("Agrupar por una sola propiedad en un objeto:");
+            var queryLastNames =
+                from student in students
+                group student by student.LastName into newGroup
+                orderby newGroup.Key
+                select newGroup;
+
+            foreach (var nameGroup in queryLastNames)
+            {
+                Console.WriteLine($"Key: {nameGroup.Key}");
+                foreach (var student in nameGroup)
+                {
+                    Console.WriteLine($"\t{student.LastName}, {student.FirstName}");
+                }
+            }
+        }
     }
 }
