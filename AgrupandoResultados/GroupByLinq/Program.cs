@@ -1,0 +1,9 @@
+﻿namespace GroupByLinq
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+}
