@@ -1,10 +1,15 @@
-﻿namespace GroupByLinq
+﻿using System;
+
+namespace GroupByLinq
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //Hola a todos.
+            StudentClass sc = new StudentClass();
+            sc.QueryHighScores(1, 90);
+            Console.WriteLine("presiona cualquier tecla para salir");
+            Console.ReadKey();
         }
     }
 }

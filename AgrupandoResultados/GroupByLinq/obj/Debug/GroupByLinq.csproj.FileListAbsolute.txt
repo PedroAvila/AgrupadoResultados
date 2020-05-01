@@ -1,0 +1,7 @@
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\GroupByLinq.exe.config
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\GroupByLinq.exe
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\GroupByLinq.pdb
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.csprojAssemblyReference.cache
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.csproj.CoreCompileInputs.cache
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.exe
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.pdb
