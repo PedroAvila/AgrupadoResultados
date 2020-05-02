@@ -5,3 +5,8 @@ C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\obj\Debug
 C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.csproj.CoreCompileInputs.cache
 C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.exe
 C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.pdb
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\EntityFramework.dll
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\EntityFramework.SqlServer.dll
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\EntityFramework.xml
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\EntityFramework.SqlServer.xml
+C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.csproj.CopyComplete

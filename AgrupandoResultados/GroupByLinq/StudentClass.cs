@@ -6,6 +6,8 @@ namespace GroupByLinq
 {
     public class StudentClass
     {
+        private readonly EmployeeRepository _employeeRepository = new EmployeeRepository();
+
         #region data
         protected enum GradeLevel { FirstYear = 1, SecondYear, ThirdYear, FourthYear };
         protected class Student
@@ -92,6 +94,46 @@ namespace GroupByLinq
                 foreach (var student in nameGroup)
                 {
                     Console.WriteLine($"\t{student.LastName}, {student.FirstName}");
+                }
+            }
+        }
+
+        public void GroupByTitle()
+        {
+            Console.WriteLine("Agrupar por una sola propiedad en un objeto:");
+            Console.WriteLine("=============================================");
+            var listEmployee = _employeeRepository.ListEmployees().ToList();
+            var query =
+                from e in listEmployee
+                group e by e.Title into g
+                orderby g.Key
+                select g;
+
+            foreach (var nameGroup in query)
+            {
+                Console.WriteLine($"Key: {nameGroup.Key}");
+                foreach (var e in nameGroup)
+                {
+                    Console.WriteLine($"\t{e.LastName}, {e.FirstName}");
+                }
+            }
+        }
+
+        public void GroupBySubstring()
+        {
+            Console.WriteLine("\r\nGroup by Algo que no sea una propiedad del objeto:");
+            Console.WriteLine("=============================================");
+            var listEmployee = _employeeRepository.ListEmployees().ToList();
+            var query =
+                from e in listEmployee
+                group e by e.LastName[0];
+
+            foreach (var employeeGroup in query)
+            {
+                Console.WriteLine($"Key: {employeeGroup.Key}");
+                foreach (var e in employeeGroup)
+                {
+                    Console.WriteLine($"\t{e.LastName}, {e.FirstName}");
                 }
             }
         }

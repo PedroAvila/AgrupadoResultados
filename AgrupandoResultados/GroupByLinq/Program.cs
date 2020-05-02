@@ -8,7 +8,9 @@ namespace GroupByLinq
         {
             StudentClass sc = new StudentClass();
             //sc.QueryHighScores(1, 90);
-            sc.GroupBySingleProperty();
+            //sc.GroupBySingleProperty();
+            //sc.GroupByTitle();
+            sc.GroupBySubstring();
             Console.WriteLine("presiona cualquier tecla para salir");
             Console.ReadKey();
         }
