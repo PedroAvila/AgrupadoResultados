@@ -10,7 +10,8 @@ namespace GroupByLinq
             //sc.QueryHighScores(1, 90);
             //sc.GroupBySingleProperty();
             //sc.GroupByTitle();
-            sc.GroupBySubstring();
+            //sc.GroupBySubstring();
+            sc.GroupByRange();
             Console.WriteLine("presiona cualquier tecla para salir");
             Console.ReadKey();
         }

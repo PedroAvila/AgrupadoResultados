@@ -137,5 +137,27 @@ namespace GroupByLinq
                 }
             }
         }
+
+        public void GroupByRange()
+        {
+            Console.WriteLine("\r\nAgrupe por rango numérico y proyecte en un nuevo tipo anónimo:");
+
+            var queryNumericRange =
+                from student in students
+                let percentile = GetPercentile(student)
+                group new { student.FirstName, student.LastName } by percentile into percentGroup
+                orderby percentGroup.Key
+                select percentGroup;
+
+            //Se requiere foreach anidado para iterar sobre grupos y elementos de grupo.
+            foreach (var studentGroup in queryNumericRange)
+            {
+                Console.WriteLine($"Key: {studentGroup.Key * 18}");
+                foreach (var item in studentGroup)
+                {
+                    Console.WriteLine($"\t{item.LastName}, {item.FirstName}");
+                }
+            }
+        }
     }
 }
