@@ -159,5 +159,24 @@ namespace GroupByLinq
                 }
             }
         }
+
+        public void AgruparMasDeUnCampo()
+        {
+            using (var context = new NorthwindContext())
+            {
+                var result = from o in context.Orders
+                             join c in context.Customers on o.CustomerID equals c.CustomerID
+                             group o by new { o.CustomerID, c.ContactName } into grupo
+                             select grupo;
+                foreach (var grupo in result)
+                {
+                    Console.WriteLine($"Nombre Cliente: {grupo.Key.ContactName} ID: {grupo.Key.CustomerID}");
+                    foreach (var oAgrupado in grupo)
+                    {
+                        Console.WriteLine($"\tPedido Nº {oAgrupado.OrderID} {oAgrupado.OrderDate} {Environment.NewLine}");
+                    }
+                }
+            }
+        }
     }
 }

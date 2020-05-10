@@ -11,7 +11,8 @@ namespace GroupByLinq
             //sc.GroupBySingleProperty();
             //sc.GroupByTitle();
             //sc.GroupBySubstring();
-            sc.GroupByRange();
+            //sc.GroupByRange();
+            sc.AgruparMasDeUnCampo();
             Console.WriteLine("presiona cualquier tecla para salir");
             Console.ReadKey();
         }
