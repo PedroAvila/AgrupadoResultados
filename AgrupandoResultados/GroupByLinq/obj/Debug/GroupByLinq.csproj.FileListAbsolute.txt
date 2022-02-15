@@ -10,3 +10,16 @@ C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\bin\Debug
 C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\EntityFramework.xml
 C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\EntityFramework.SqlServer.xml
 C:\D\PruebasCSharp\AgrupandoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.csproj.CopyComplete
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\GroupByLinq.exe.config
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\GroupByLinq.exe
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\GroupByLinq.pdb
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\EntityFramework.dll
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\EntityFramework.SqlServer.dll
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\EntityFramework.xml
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\bin\Debug\EntityFramework.SqlServer.xml
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.csproj.AssemblyReference.cache
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.csproj.SuggestedBindingRedirects.cache
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.csproj.CoreCompileInputs.cache
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.csproj.CopyComplete
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.exe
+C:\Csharp\AgrupadoResultados\AgrupandoResultados\GroupByLinq\obj\Debug\GroupByLinq.pdb

@@ -178,5 +178,14 @@ namespace GroupByLinq
                 }
             }
         }
+
+        public void AgregarFrutas()
+        {
+            string[] fruits = { "apple", "mango", "orange", "passionfruit", "grape" };
+            // Determina si alguna cadena de la matriz es más larga que "plátano".
+            string longestName =
+                fruits.Aggregate("banana", (longest, next) => next.Length > longest.Length ? next : longest, fruit => fruit.ToUpper());
+            Console.WriteLine($"La fruta con el nombre más largo es: {longestName}");
+        }
     }
 }
