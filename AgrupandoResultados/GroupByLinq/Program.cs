@@ -6,6 +6,9 @@ namespace GroupByLinq
 {
     class Program
     {
+        private static readonly SdAggregate _sdAggregate = new SdAggregate();
+        private static readonly SdWhere _sdWhere = new SdWhere();
+        private static readonly SdSelect _sdSelect = new SdSelect();
         static void Main(string[] args)
         {
             StudentClass sc = new StudentClass();
@@ -16,45 +19,16 @@ namespace GroupByLinq
             //sc.GroupByRange();
             //sc.AgruparMasDeUnCampo();
             //sc.AgregarFrutas();
+            //_sdAggregate.AggregateSumaDeNumeros();
+            //_sdAggregate.AggregateConcat();
+            //_sdAggregate.AggregateCount();
+            //_sdWhere.WhereStarsWith();
+            //_sdWhere.WhereP();
+            _sdSelect.SelectLength();
+            _sdSelect.SelectNombreTamano();
+            
 
-            string[] presidents = {
-                                     "Adams", "Arthur", "Buchanan", "Bush", "Carter", "Cleveland",
-                                     "Clinton", "Coolidge", "Eisenhower", "Fillmore", "Ford", "Garfield",
-                                     "Grant", "Harding", "Harrison", "Hayes", "Hoover", "Jackson",
-                                     "Jefferson", "Johnson", "Kennedy", "Lincoln", "Madison", "McKinley",
-                                     "Monroe", "Nixon", "Obama", "Pierce", "Polk", "Reagan", "Roosevelt",
-                                     "Taft", "Taylor", "Truman", "Tyler", "Van Buren", "Washington", "Wilson"};
-
-            var sequence = presidents.Where(p => p.StartsWith("J"));
-            foreach (var s in sequence)
-                Console.WriteLine($"{s}");
-
-            Console.WriteLine(" ");
-            Console.WriteLine("=====================================================");
-            Console.WriteLine("Aggregate suma de números");
-            Console.WriteLine(" ");
-
-            IEnumerable<int> ints = new List<int> { 2, 4, 1, 6 };
-            int result = ints.Aggregate((sum, val)=> sum + val);
-            Console.WriteLine($"La suma es: {result}");
-
-            Console.WriteLine(" ");
-            Console.WriteLine("=====================================================");
-            Console.WriteLine("Aggregate Concat");
-            Console.WriteLine(" ");
-
-            IEnumerable<string> strings = new List<string> { "a", "ab", "abc", "abcd", "z" };
-            string result2 = strings.Aggregate((concat, str) => $"{concat}&{str}");
-            Console.WriteLine(result2);
-
-            Console.WriteLine(" ");
-            Console.WriteLine("=====================================================");
-            Console.WriteLine("Aggregate");
-            Console.WriteLine(" ");
-
-            IEnumerable<string> strings3 = new List<string> { "a", "ab", "abc", "abcd" };
-            int result3 = strings3.Aggregate(0, (count, val) => count + 1);
-            Console.WriteLine(result3);
+            
 
 
 
